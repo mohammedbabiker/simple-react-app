@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { MainApp } from "./styled.js";
 import './App.css'
 
 function App() {
@@ -17,14 +18,14 @@ const addNumber = (count) => setCount(Number(count) + 1);
   }, [count]);
 
   return (
-    <>
+    <MainApp>
 
       <h1>Count App</h1>
       <button onClick={() => addNumber(count)}>
         count is {count}
       </button>
 
-    </>
+    </MainApp>
   )
 }
 
